@@ -152,10 +152,10 @@ io_bench <- function(runs = 3, write = TRUE){
 }
 
 while(TRUE) {
-  r_bench(n = 10, write = FALSE)
-  io_bench(n = 10, write = FALSE)
+  r_bench(write = FALSE)
+  io_bench(write = FALSE)
   print(
-    paste0('finished 10 iterations of both tests, ',
+    paste0('finished 3 iterations of both tests, ',
            stringi::stri_rand_strings(1, length = 5))
   )
 }
